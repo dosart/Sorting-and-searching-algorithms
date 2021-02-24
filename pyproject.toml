@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "sorting_and_searching"
+version = "0.1.0"
+description = "Implementation of classical sorting and searching algorithms"
+authors = ["Denis <Dysprosium92@ya.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
