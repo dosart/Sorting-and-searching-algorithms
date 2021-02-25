@@ -18,4 +18,4 @@ build: check
 	poetry build
 
 cc-coverage:
-	poetry run coverage xml
+	poetry run python -m pytest --cov=algorithms tests/ --cov-report=xml
