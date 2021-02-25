@@ -32,9 +32,4 @@ jobs:
       - name: Run tests
         run: |
           make test
-      - name: Code Climate Coverage Action
-        uses: paambaati/codeclimate-action@v2.7.4
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REP_ID }}
-        with:
-          coverageCommand: make cc-coverage
+
