@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "sorting and searching algorithms"
-version = "0.1.0"
+version = "0.2.0"
 description = "Implementation of classical sorting and searching algorithms"
 authors = ["Denis <Dysprosium92@ya.ru>"]
 readme = "README.md"
 repository = "https://github.com/dosart/sorting_and_searching"
 packages = [
-  { include = "algoritms" },
+    { include = "algorithms" },
 ]
 
 [tool.poetry.dependencies]

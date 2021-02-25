@@ -1,17 +1,19 @@
+.PHONY: install selfcheck test lint check build
+
 install:
-	@poetry install
+	 poetry install
+
+selfcheck:
+	poetry check
 
 test:
-	poetry run coverage run --source=algorithms -m pytest tests
+	poetry run python -m pytest tests/
 
 lint:
 	poetry run flake8 algorithms
 
-check:
-	@make selfcheck
-	@make test
-	@make lint
+check: selfcheck test lint
 
-build:
-	@make check
-	@poetry build
+build: check
+	poetry build
+
