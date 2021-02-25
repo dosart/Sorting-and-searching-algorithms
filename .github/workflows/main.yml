@@ -1,0 +1,40 @@
+name: linter_and_tests
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    strategy: 
+      matrix:
+        python_version: [3.8]
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set Up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python_version }}
+      
+      - name: Install Dependency
+        run: |
+          pip install poetry
+          make install
+      
+      - name: Run Tests
+        run: make test
+      
+      - name: Run linter:
+        run: make lint
+      
+      - name: Code Climate Coverage Action
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REP_ID }}
+        with:
+          coverageCommand: make cc-coverage
