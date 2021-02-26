@@ -1,0 +1,28 @@
+language: python
+
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+
+install:
+  - pip install poetry
+  - pip install wemake-python-styleguide
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install coverage
+
+before_scripts:
+   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+   - chmode +x ./cc-test-reporter
+   - ./cc-test-reporter before-build
+
+script:
+  - make check
+  - make cc-coverage
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build format-coverage coverage.xml -t coverage.py
+  - ./cc-test-reporter after-build upload-coverage
