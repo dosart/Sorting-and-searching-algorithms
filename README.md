@@ -2,7 +2,7 @@
 ![Test and Linter](https://github.com/dosart/sorting_and_searching/actions/workflows/Tests_and_linter.yml/badge.svg)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-# sorting_and_searching
+# Sorting and Searching Algorithms
 
 Implementation of classical sorting and searching algorithms:
 
