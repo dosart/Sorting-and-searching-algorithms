@@ -15,3 +15,7 @@ def linear_search(collection, search_value):
         if element == search_value:
             return index
     return -1
+
+
+def binary_search(collection, search_value):
+    return -1
