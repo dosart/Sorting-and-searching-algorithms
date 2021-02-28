@@ -1,4 +1,4 @@
-"""Tests of linear search algorithm."""
+"""Tests of search algorithm."""
 
 import pytest
 
