@@ -10,9 +10,6 @@ install:
   - pip install poetry
   - pip install wemake-python-styleguide
   - pip install pytest
-  - pip install pytest-cov
-  - pip install coverage
-  - make install
 
 script:
   - make check
