@@ -6,9 +6,9 @@
 
 Implementation of classical sorting and searching algorithms:
 
-- Linear search
-- Binary search
+- [Linear search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/linear_search.py)
+- [Binary search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/binary_search.py)
 - Jump Search
 - Fibonacci search
-- Exponential Search
-- interpolation search
+- [Exponential Search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/exponential_search.py)
+- [Interpolation search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/interpolation_search.py)
