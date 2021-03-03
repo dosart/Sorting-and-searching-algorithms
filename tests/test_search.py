@@ -1,10 +1,10 @@
-"""Tests of search algorithm."""
+"""Tests of search algorithms."""
 
 import pytest
 
-from algorithms.linear_search import linear_search
-from algorithms.binary_search import binary_search
-from algorithms.exponential_search import exponential_search
+from algorithms.search.linear_search import linear_search
+from algorithms.search.binary_search import binary_search
+from algorithms.search.exponential_search import exponential_search
 
 
 @pytest.mark.parametrize("function", [linear_search, binary_search, exponential_search])

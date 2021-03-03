@@ -1,1 +1,1 @@
-"""Sorting and searching algorithms project."""
+"""Sorting and searching algorithms packet."""
