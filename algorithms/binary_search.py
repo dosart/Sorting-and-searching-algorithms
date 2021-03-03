@@ -27,11 +27,3 @@ def binary_search(collection, search_value):
             last = mid - 1
 
     return -1
-
-
-def _is_continue(first, last):
-    return (True if first <= last else False)
-
-
-def _next_index(first, last):
-    return first + ((last - first) // 2)
