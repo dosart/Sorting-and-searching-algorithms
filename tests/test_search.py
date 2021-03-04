@@ -8,14 +8,20 @@ from algorithms.search.exponential_search import exponential_search
 
 
 @pytest.mark.parametrize("function", [linear_search, binary_search, exponential_search])
-def test_negative_one(function):
+def test_element_is_not_found(function):
     items = [1,2,3,4,5]
     assert(function(items, 6) == -1)
 
 
 @pytest.mark.parametrize("function", [linear_search, binary_search, exponential_search])
-def test_negative_two(function):
+def test_list_is_empty(function):
     assert(function([], 6) == -1)
+
+
+@pytest.mark.parametrize("function", [linear_search, binary_search, exponential_search])
+def test_one_element(function):
+    items = [1]
+    assert(function(items, 1) == 0)
 
 
 @pytest.mark.parametrize("function", [linear_search, binary_search, exponential_search])
