@@ -1,1 +1,1 @@
-"""Search algorithms packet."""
+"""Search algorithms package."""

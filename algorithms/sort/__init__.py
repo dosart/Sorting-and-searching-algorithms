@@ -1,1 +1,1 @@
-"""Sorting algorithms packet."""
+"""Sorting algorithms package."""
