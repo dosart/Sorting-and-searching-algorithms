@@ -7,9 +7,9 @@
 Implementation of classical sorting and searching algorithms:
 
 ## Searching algorithms
-- [Linear search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/linear_search.py)
-- [Binary search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/binary_search.py)
-- [Exponential search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/exponential_search.py)
+- [Linear search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/search/linear_search.py)
+- [Binary search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/search/binary_search.py)
+- [Exponential search](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/search/exponential_search.py)
 - Jump Search
 
 ## Sorting algorithms
