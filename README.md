@@ -16,3 +16,4 @@ Implementation of classical sorting and searching algorithms:
 - [Insertion sort](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/sort/insetrion_sort.py)
 - [Merge sort](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/sort/merge_sort.py)
 - [Quick sort](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/sort/quick_sort.py)
+- [Heap sort](https://github.com/dosart/sorting_and_searching/blob/main/algorithms/sort/heap_sort.py)
