@@ -24,6 +24,13 @@ def test_positive_one(function):
 
 
 @pytest.mark.parametrize("function", [bubble_sort, insetrion_sort, merge_sort, quick_sort, heap_sort])
+def test_even_length(function):
+    items = [1,0,4,3]
+    function(items)
+    assert(items == [0,1,3,4])
+
+
+@pytest.mark.parametrize("function", [bubble_sort, insetrion_sort, merge_sort, quick_sort, heap_sort])
 def test_positive_two(function):
     items = [1,1,1,1]
     function(items)
