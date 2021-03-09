@@ -10,17 +10,17 @@ def heap_sort(seq):
     Args:
         seq: indexed collection
     """
-    _build_max_heep(seq)
+    _build_max_heap(seq)
 
     max_id = 0
-    heep_size = len(seq) - 1
-    for _ in range(heep_size, -1, -1):
-        swap(seq, max_id, heep_size)
-        _sift_down(seq, heep_size, max_id)
-        heep_size -= 1
+    heap_size = len(seq) - 1
+    while heap_size >= 0:
+        swap(seq, max_id, heap_size)
+        _sift_down(seq, heap_size, max_id)
+        heap_size -= 1
 
 
-def _build_max_heep(seq):
+def _build_max_heap(seq):
     length = len(seq)
     half = length // 2
     zero = -1
@@ -29,14 +29,14 @@ def _build_max_heep(seq):
         _sift_down(seq, length, index)
 
 
-def _sift_down(heap, heep_size, index):
-    while _left_children(index) < heep_size:
+def _sift_down(heap, heap_size, index):
+    while _left_children(index) < heap_size:
 
         right = _right_children(index)
         left = _left_children(index)
         max_id = left
 
-        if right < heep_size and heap[right] > heap[max_id]:
+        if right < heap_size and heap[right] > heap[max_id]:
             max_id = right
 
         if heap[index] >= heap[max_id]:
