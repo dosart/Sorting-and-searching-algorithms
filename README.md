@@ -3,6 +3,7 @@
 
 # Sorting and Searching Algorithms
 The project was made as part of the [Coding Interview University](https://github.com/Ilyushin/google-interview-university) course.
+
 Implementation of classical sorting and searching algorithms:
 
 ## Searching algorithms
